@@ -1,0 +1,7 @@
+bin/
+external/_build/
+erl/_build/
+external/chumak/_build/
+*.o
+*.beam
+erl_crash.dump
