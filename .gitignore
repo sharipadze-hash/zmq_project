@@ -4,4 +4,5 @@ erl/_build/
 external/chumak/_build/
 *.o
 *.beam
+*.swp
 erl_crash.dump

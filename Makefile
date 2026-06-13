@@ -26,7 +26,7 @@ erl_build: chumak_build
 
 c_build: zmq_lib
 	mkdir -p bin
-	$(CC) $(CFLAGS) src/send.c -o bin/send $(LDFLAGS)
+	$(CC) $(CFLAGS) src/send.c -o bin/send $(LDFLAGS) -Wl,-rpath,$(ZMQ_PREFIX)/lib
 
 run:
 	cd erl && erl -pa $(ERL_LIBS) -eval "server:start()"
